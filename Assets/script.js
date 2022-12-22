@@ -122,9 +122,9 @@ function timeLeft() {
       timeEl.textContent = "You have " + secondsLeft + " seconds remaining";
   
       if(secondsLeft === 0) {
-        // Stops execution of action at set interval
+   
         clearInterval(timerInterval);
-        // Calls function to create and append image
+        
         sendMessage();
       }
   
@@ -132,4 +132,3 @@ function timeLeft() {
 }
 
 timeLeft()
-  
